@@ -18,25 +18,19 @@ const openSetting = (config && config.openSetting) ? config.openSetting: false;
 hexo.extend.tag.register('details', tagDetails, { ends: true });
 
 function tagDetails(args, content) {
-  let openMode;
-  let filtered = args.filter(e => {
-    if (e  === 'mode:open') {
-      openMode = true;
-      return false;
-    } else if (e === 'mode:close') {
-      openMode = false;
-      return false;
-    } else {
-      return true;
-    }
-  });
+  let isOpen = e => e === "mode:open"
+  let isClose = e => e === "mode:Close"
+  let isMode = e => isOpen(e) || isClose(e);
 
-  let isOpen = filtered.length < args.length ? openMode : openSetting;
+  let filtered = args.filter(e => isMode(e));
+  let modeFlag = isOpen(args.find(e => isMode(e)));
+
+  let openMode = filtered.length < args.length ? modeFlag : openSetting;
   let summary = util.htmlTag('summary', {}, filtered.join(' '));
   let rendered = hexo.render.renderSync({ text: content, engine: 'markdown' });
   let attrs = {};
 
-  if (isOpen) attrs.open = 'open';
+  if (openMode) attrs.open = 'open';
   if (className) attrs.class = className;
 
   return util.htmlTag('details', attrs, summary + rendered);
