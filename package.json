@@ -1,0 +1,30 @@
+{
+  "name": "hexo-tag-details",
+  "version": "0.1.0",
+  "description": "HTML5 details tag on your Hexo article.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hinastory/hexo-tag-details.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hinastory/hexo-tag-details/issues"
+  },
+  "keywords": [
+    "hexo",
+    "blog",
+    "plugin",
+    "helper",
+    "tag",
+    "details",
+    "summary"
+  ],
+  "author": "hinastory",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-util": "^0.6.3"
+  }
+}
