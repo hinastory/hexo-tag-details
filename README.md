@@ -1,7 +1,7 @@
 # hexo-tag-details
 
-[![NPM](https://nodei.co/npm/hexo-tag-details.png)](https://nodei.co/npm/hexo-details/)
-[![licence](https://img.shields.io/npm/l/hexo-tag-details.svg?style=flat)](LICENSE)
+[![NPM](https://nodei.co/npm/hexo-tag-details.png)](https://nodei.co/npm/hexo-tag-details/)
+[![licence](https://img.shields.io/github/license/hinastory/hexo-tag-details.svg)](LICENSE)
 [![hexo](https://img.shields.io/badge/Hexo-%3E%3D3.0-blue.svg?style=flat-square)](https://hexo.io)
 [![Maintainability](https://api.codeclimate.com/v1/badges/498adb9be2a84bcc0803/maintainability)](https://codeclimate.com/github/hinastory/hexo-tag-details/maintainability)
 
