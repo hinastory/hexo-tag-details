@@ -1,7 +1,7 @@
 # hexo-tag-details
 
-[![NPM](https://nodei.co/npm/hexo-details.png)](https://nodei.co/npm/hexo-details/)
-[![licence](https://img.shields.io/npm/l/hexo-details.svg?style=flat)](LICENSE)
+[![NPM](https://nodei.co/npm/hexo-tag-details.png)](https://nodei.co/npm/hexo-details/)
+[![licence](https://img.shields.io/npm/l/hexo-tag-details.svg?style=flat)](LICENSE)
 [![hexo](https://img.shields.io/badge/Hexo-%3E%3D3.0-blue.svg?style=flat-square)](https://hexo.io)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ddfce94fa04983a9c7c7/maintainability)](https://codeclimate.com/github/hinastory/hexo-tag-details/maintainability)
 
@@ -30,31 +30,49 @@ I'm from the Earth. Water Planet!
 it generates HTML:
 ```html
 <details>
-<summary>Where are you from?</summary>
-I'm from the Earth. Water Planet!
+  <summary>Where are you from?</summary>
+  I'm from the Earth. Water Planet!
 </details>
 ```
 
+it is displayed:
 <details>
-<summary>Where are you from?</summary>
-I'm from the Earth. Water Planet!
+  <summary>Where are you from?</summary>
+  I'm from the Earth. Water Planet!
 </details>
 
+----
 Example2(Specify open mode):
 
 ```
-{% details mode:open Where are you from? %}
-I'm from the Earth. Water Planet!
+{% details mode:open What food do you like? %}
+- Sushi
+- Tempura
+- Sukiyaki
 {% enddetails %}
 ```
 
 it generates HTML:
 ```html
 <details open="open">
-<summary>Where are you from?</summary>
-I'm from the Earth. Water Planet!
+  <summary>What food do you like?</summary>
+  <ol>
+    <li>Sushi</li>
+    <li>Tempura</li>
+    <li>Sukiyaki</li>
+  </ol>
 </details>
 ```
+
+it is displayed:
+<details open="open">
+  <summary>What food do you like?</summary>
+  <ol>
+    <li>Sushi</li>
+    <li>Tempura</li>
+    <li>Sukiyaki</li>
+  </ol>
+</details>
 
 ### Configuration
 
