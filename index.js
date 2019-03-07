@@ -11,17 +11,13 @@
 
 'use strict';
 const util = require('hexo-util');
-const configTagDetails = hexo.config.tagDetails;
+const config = hexo.config.tagDetails;
+const className = (config && config.className) ? config.className: false;
+const openSetting = (config && config.openSetting) ? config.openSetting: false;
 
 hexo.extend.tag.register('details', tagDetails, { ends: true });
 
 function tagDetails(args, content) {
-  let className, openSetting;
-  if (configTagDetails) {
-    className = configTagDetails.className;
-    openSetting = configTagDetails.open;
-  }
-
   let openMode;
   let filtered = args.filter(e => {
     if (e  === 'mode:open') {
