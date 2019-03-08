@@ -5,7 +5,7 @@
 [![hexo](https://img.shields.io/badge/Hexo-%3E%3D3.0-blue.svg?style=flat-square)](https://hexo.io)
 [![Maintainability](https://api.codeclimate.com/v1/badges/498adb9be2a84bcc0803/maintainability)](https://codeclimate.com/github/hinastory/hexo-tag-details/maintainability)
 
-HTML5 details tag on your [Hexo](https://hexo.io/) article.
+HTML5 details tag on your [Hexo](https://hexo.io/) article
 
 ## Installation
 
