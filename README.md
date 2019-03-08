@@ -81,8 +81,8 @@ it is displayed:
 
 #### open
 
-`open` is default open mode for details tag.
- (Default: false)
+`open` is default open mode for details tag.(Default: `false`)
+
 _config.yml:
 
 ```yaml
