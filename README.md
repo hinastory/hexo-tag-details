@@ -74,12 +74,12 @@ it is displayed:
   </ol>
 </details>
 
-### Configuration
+## Configuration
 
-#### className
+### className
 `className` is CSS class name for details tag. (Default: None)
 
-#### open
+### open
 
 `open` is default open mode for details tag.(Default: `false`)
 
