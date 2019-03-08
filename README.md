@@ -86,7 +86,7 @@ it is displayed:
 _config.yml:
 
 ```yaml
-tagDetails:
+tag_details:
   className:
   open: false
 ```

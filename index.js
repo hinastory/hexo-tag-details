@@ -11,7 +11,7 @@
 
 'use strict';
 const util = require('hexo-util');
-const config = hexo.config.tagDetails;
+const config = hexo.config.tag_details;
 const className = (config && config.className) ? config.className: false;
 const openSetting = (config && config.open) ? config.open: false;
 

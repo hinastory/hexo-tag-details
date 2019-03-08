@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-details",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "HTML5 details tag on your Hexo article.",
   "main": "index.js",
   "scripts": {
