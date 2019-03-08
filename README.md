@@ -77,12 +77,12 @@ it is displayed:
 ### Configuration
 
 #### className
-`className` is CSS class name for details tag.
+`className` is CSS class name for details tag. (Default: None)
 
 #### open
 
 `open` is default open mode for details tag.
-
+ (Default: false)
 _config.yml:
 
 ```yaml
