@@ -46,9 +46,9 @@ Example2(Specify open mode):
 
 ```
 {% details mode:open What food do you like? %}
-- Sushi
-- Tempura
-- Sukiyaki
+1. Sushi
+2. Tempura
+3. Sukiyaki
 {% enddetails %}
 ```
 
